@@ -8,6 +8,6 @@ public interface ImagePyramidlayer {
 
     GrayMap getDifference();
 
-    GrayMap getRestored();
+    GrayMap getBase();
 
 }

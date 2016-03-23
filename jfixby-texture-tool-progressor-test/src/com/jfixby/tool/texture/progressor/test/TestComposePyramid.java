@@ -70,7 +70,7 @@ public class TestComposePyramid {
 	    {
 		String child_name = original_name + "-" + i + "-.png";
 		File output_file = output.child(child_name);
-		GrayMap restored = layer.getRestored();
+		GrayMap restored = layer.getBase();
 		write(output_file, restored);
 	    }
 

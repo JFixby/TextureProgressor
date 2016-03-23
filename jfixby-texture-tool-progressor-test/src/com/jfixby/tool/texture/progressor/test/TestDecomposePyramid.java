@@ -36,12 +36,19 @@ public class TestDecomposePyramid {
 
 	GrayImagePyramidDecomposeSpecs settings = TextureProgressor.newGrayImagePyramidDeComposeSpecs();
 	settings.setInputImage(inputImage.getRed());
-	settings.setMaxIterations(16);
+	settings.setMaxIterations(8);
 
 	GrayImagePyramidDecomposer pyramid = TextureProgressor.newPyramidDecomposer(settings);
 	pyramid.deCompose();
 
 	String original_name = inputPNG.nameWithoutExtension();
+
+	{
+
+	    File output_file = output.child(original_name + ".png");
+	    write(output_file, inputImage.getRed());
+	}
+
 	Collection<ImagePyramidlayer> layes = pyramid.listLayers();
 
 	GrayImagePyramidComposition composition = new GrayImagePyramidComposition();
