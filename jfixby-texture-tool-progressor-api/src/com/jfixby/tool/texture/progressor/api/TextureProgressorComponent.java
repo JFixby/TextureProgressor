@@ -9,4 +9,6 @@ public interface TextureProgressorComponent {
     GrayImagePyramidComposeSpecs newGrayImagePyramidComposeSpecs();
 
     GrayImagePyramidComposer newPyramidComposer(GrayImagePyramidComposeSpecs settings);
+
+    FractalProgressorSpecs newFractalProgressorSpecs();
 }

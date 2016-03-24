@@ -34,4 +34,8 @@ public class TextureProgressor {
     public static GrayImagePyramidComposer newPyramidComposer(GrayImagePyramidComposeSpecs settings) {
 	return invoke().newPyramidComposer(settings);
     }
+
+    public static FractalProgressorSpecs newFractalProgressorSpecs() {
+	return invoke().newFractalProgressorSpecs();
+    }
 }
