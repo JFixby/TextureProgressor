@@ -2,7 +2,7 @@ package com.jfixby.tool.texture.progressor.test;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.adopted.gdx.json.GdxJson;
+import com.jfixby.cmns.adopted.gdx.json.RedJson;
 import com.jfixby.cmns.api.collections.Collection;
 import com.jfixby.cmns.api.desktop.ImageAWT;
 import com.jfixby.cmns.api.file.File;
@@ -25,7 +25,7 @@ public class TestDecomposePyramid {
     public static void main(String[] args) throws IOException {
 	DesktopAssembler.setup();
 	TextureProgressor.installComponent(new RedTextureProgressor());
-	Json.installComponent(new GdxJson());
+	Json.installComponent(new RedJson());
 
 	File inputPNG = LocalFileSystem.ApplicationHome().child("input").child("1.png");
 	File output = LocalFileSystem.ApplicationHome().child("output").child("decomposed");
@@ -95,7 +95,7 @@ public class TestDecomposePyramid {
 	{
 	    String child_name = original_name + GrayImagePyramidComposition.FILE_EXTENSION;
 
-	    String data = Json.serializeToString(composition);
+	    String data = Json.serializeToString(composition).toString();
 	    File output_file = output.child(child_name);
 	    output_file.writeString(data);
 	    L.d("writing", output_file);

@@ -2,7 +2,7 @@ package com.jfixby.tool.texture.progressor.test;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.adopted.gdx.json.GdxJson;
+import com.jfixby.cmns.adopted.gdx.json.RedJson;
 import com.jfixby.cmns.api.collections.Collection;
 import com.jfixby.cmns.api.desktop.ImageAWT;
 import com.jfixby.cmns.api.err.Err;
@@ -26,7 +26,7 @@ public class TestComposePyramid {
     public static void main(String[] args) throws IOException {
 	DesktopAssembler.setup();
 	TextureProgressor.installComponent(new RedTextureProgressor());
-	Json.installComponent(new GdxJson());
+	Json.installComponent(new RedJson());
 
 	File input = LocalFileSystem.ApplicationHome().child("output").child("decomposed");
 	File output = LocalFileSystem.ApplicationHome().child("output").child("composed");

@@ -2,7 +2,7 @@ package com.jfixby.tool.texture.progressor.test;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.adopted.gdx.json.GdxJson;
+import com.jfixby.cmns.adopted.gdx.json.RedJson;
 import com.jfixby.cmns.api.desktop.ImageAWT;
 import com.jfixby.cmns.api.file.File;
 import com.jfixby.cmns.api.file.LocalFileSystem;
@@ -20,7 +20,7 @@ public class TestFractalDecomposer {
     public static void main(String[] args) throws IOException {
 	DesktopAssembler.setup();
 	TextureProgressor.installComponent(new RedTextureProgressor());
-	Json.installComponent(new GdxJson());
+	Json.installComponent(new RedJson());
 
 	File inputPNG = LocalFileSystem.ApplicationHome().child("input").child("1.png");
 	File output = LocalFileSystem.ApplicationHome().child("output").child("decomposed");
