@@ -6,12 +6,12 @@ import java.io.IOException;
 import com.jfixby.cmns.api.desktop.ImageAWT;
 import com.jfixby.cmns.api.file.File;
 import com.jfixby.cmns.api.file.LocalFileSystem;
-import com.jfixby.red.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopSetup;
 
 public class ScaleTestAWT {
 
     public static void main(String[] args) throws IOException {
-	DesktopAssembler.setup();
+	DesktopSetup.deploy();
 
 	File inputPNG = LocalFileSystem.ApplicationHome().child("input").child("1.png");
 	File output = LocalFileSystem.ApplicationHome().child("output");

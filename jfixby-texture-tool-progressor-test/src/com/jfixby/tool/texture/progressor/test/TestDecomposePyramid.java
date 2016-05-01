@@ -11,7 +11,7 @@ import com.jfixby.cmns.api.image.ColorMap;
 import com.jfixby.cmns.api.image.GrayMap;
 import com.jfixby.cmns.api.json.Json;
 import com.jfixby.cmns.api.log.L;
-import com.jfixby.red.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopSetup;
 import com.jfixby.tool.texture.progressor.api.GrayImagePyramidDecomposeSpecs;
 import com.jfixby.tool.texture.progressor.api.GrayImagePyramidDecomposer;
 import com.jfixby.tool.texture.progressor.api.ImagePyramidlayer;
@@ -23,7 +23,7 @@ import com.jfixby.tool.texture.progressor.red.RedTextureProgressor;
 public class TestDecomposePyramid {
 
     public static void main(String[] args) throws IOException {
-	DesktopAssembler.setup();
+	DesktopSetup.deploy();
 	TextureProgressor.installComponent(new RedTextureProgressor());
 	Json.installComponent(new RedJson());
 

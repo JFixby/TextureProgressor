@@ -10,7 +10,7 @@ import com.jfixby.cmns.api.image.ColorMap;
 import com.jfixby.cmns.api.image.GrayMap;
 import com.jfixby.cmns.api.json.Json;
 import com.jfixby.cmns.api.log.L;
-import com.jfixby.red.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopSetup;
 import com.jfixby.tool.texture.progressor.api.FractalProgressorSpecs;
 import com.jfixby.tool.texture.progressor.api.TextureProgressor;
 import com.jfixby.tool.texture.progressor.red.RedTextureProgressor;
@@ -18,7 +18,7 @@ import com.jfixby.tool.texture.progressor.red.RedTextureProgressor;
 public class TestFractalDecomposer {
 
     public static void main(String[] args) throws IOException {
-	DesktopAssembler.setup();
+	DesktopSetup.deploy();
 	TextureProgressor.installComponent(new RedTextureProgressor());
 	Json.installComponent(new RedJson());
 
