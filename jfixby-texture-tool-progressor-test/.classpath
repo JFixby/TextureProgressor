@@ -10,7 +10,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-texture-tool-progressor-api"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-texture-tool-progressor-red"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-tool-texture-compressor-api"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-tool-texture-compressor-gdx"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-tool-texture-packer-gdx"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-tool-texture-slicer-api"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jfixby-tool-texture-slicer-red"/>
