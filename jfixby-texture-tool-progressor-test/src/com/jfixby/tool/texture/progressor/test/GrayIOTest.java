@@ -2,13 +2,13 @@ package com.jfixby.tool.texture.progressor.test;
 
 import java.io.IOException;
 
+import com.jfixby.cmns.api.desktop.DesktopSetup;
 import com.jfixby.cmns.api.desktop.ImageAWT;
 import com.jfixby.cmns.api.file.File;
 import com.jfixby.cmns.api.file.LocalFileSystem;
 import com.jfixby.cmns.api.image.ColorMap;
 import com.jfixby.cmns.api.image.GrayMap;
 import com.jfixby.cmns.api.log.L;
-import com.jfixby.red.desktop.DesktopSetup;
 
 public class GrayIOTest {
 
