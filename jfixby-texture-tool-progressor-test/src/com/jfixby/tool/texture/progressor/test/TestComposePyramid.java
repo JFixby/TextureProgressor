@@ -3,16 +3,16 @@ package com.jfixby.tool.texture.progressor.test;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.api.collections.Collection;
-import com.jfixby.cmns.api.desktop.DesktopSetup;
-import com.jfixby.cmns.api.desktop.ImageAWT;
-import com.jfixby.cmns.api.err.Err;
-import com.jfixby.cmns.api.file.File;
-import com.jfixby.cmns.api.file.LocalFileSystem;
-import com.jfixby.cmns.api.image.ArrayGrayMap;
-import com.jfixby.cmns.api.image.GrayMap;
-import com.jfixby.cmns.api.json.Json;
-import com.jfixby.cmns.api.log.L;
+import com.jfixby.scarabei.api.collections.Collection;
+import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ImageAWT;
+import com.jfixby.scarabei.api.err.Err;
+import com.jfixby.scarabei.api.file.File;
+import com.jfixby.scarabei.api.file.LocalFileSystem;
+import com.jfixby.scarabei.api.image.ArrayGrayMap;
+import com.jfixby.scarabei.api.image.GrayMap;
+import com.jfixby.scarabei.api.json.Json;
+import com.jfixby.scarabei.api.log.L;
 import com.jfixby.tool.texture.progressor.api.GrayImagePyramidComposeSpecs;
 import com.jfixby.tool.texture.progressor.api.GrayImagePyramidComposer;
 import com.jfixby.tool.texture.progressor.api.ImagePyramidlayer;

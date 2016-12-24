@@ -1,6 +1,6 @@
 package com.jfixby.tool.texture.progressor.api;
 
-import com.jfixby.cmns.api.image.GrayMap;
+import com.jfixby.scarabei.api.image.GrayMap;
 
 public interface ImagePyramidlayer {
 
