@@ -3,7 +3,7 @@ package com.jfixby.tool.texture.progressor.test;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ScarabeiDesktop;
 import com.jfixby.scarabei.api.desktop.ImageAWT;
 import com.jfixby.scarabei.api.file.File;
 import com.jfixby.scarabei.api.file.LocalFileSystem;
@@ -11,7 +11,7 @@ import com.jfixby.scarabei.api.file.LocalFileSystem;
 public class ScaleTestAWT {
 
     public static void main(String[] args) throws IOException {
-	DesktopSetup.deploy();
+	ScarabeiDesktop.deploy();
 
 	File inputPNG = LocalFileSystem.ApplicationHome().child("input").child("1.png");
 	File output = LocalFileSystem.ApplicationHome().child("output");

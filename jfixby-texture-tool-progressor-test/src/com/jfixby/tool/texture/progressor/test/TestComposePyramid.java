@@ -4,7 +4,7 @@ package com.jfixby.tool.texture.progressor.test;
 import java.io.IOException;
 
 import com.jfixby.scarabei.api.collections.Collection;
-import com.jfixby.scarabei.api.desktop.DesktopSetup;
+import com.jfixby.scarabei.api.desktop.ScarabeiDesktop;
 import com.jfixby.scarabei.api.desktop.ImageAWT;
 import com.jfixby.scarabei.api.err.Err;
 import com.jfixby.scarabei.api.file.File;
@@ -24,7 +24,7 @@ import com.jfixby.tool.texture.progressor.red.RedTextureProgressor;
 public class TestComposePyramid {
 
 	public static void main (final String[] args) throws IOException {
-		DesktopSetup.deploy();
+		ScarabeiDesktop.deploy();
 		TextureProgressor.installComponent(new RedTextureProgressor());
 		Json.installComponent("com.jfixby.cmns.adopted.gdx.json.RedJson");
 
